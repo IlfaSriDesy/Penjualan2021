@@ -14,4 +14,5 @@ public interface UsersService {
     public List<Users> searchByUsername(SearchDTO searchDTO);
     public UsersDTO getUserById(int usersId);
     public Users updateUser(UsersDTO user);
+    public List<UsersDTO> getUsers();
 }

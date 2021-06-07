@@ -10,8 +10,13 @@
 </head>
 <body>
     <div>${title}</div>
+
     <c:url var="insertUser" value="/doInsertUser"></c:url>
+    <c:url var="login" value="/login"></c:url>
+
     <button><a href="${insertUser}">insert</a></button>
+    <button><a href="${login}">Login</a></button>
+
     <form:form id="search" action="/search" modelAttribute="search" method="POST">
         <table>
             <tr>
